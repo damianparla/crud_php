@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Verificar si el ID es válido
     if (!empty($id)) {
         // Realizar la eliminación en la base de datos
-        $sql = $conexion->query("DELETE FROM crud_php WHERE id_persona = $id");
+        $sql = $conexion->query("DELETE FROM App_Final WHERE id_persona = $id");
 
         if ($sql) {
             // Redireccionar a la página principal después de la eliminación exitosa

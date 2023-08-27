@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Obtener los datos del registro correspondiente al ID de la base de datos
-    $sql = $conexion->query("SELECT * FROM crud_php WHERE id_persona = $id");
+    $sql = $conexion->query("SELECT * FROM App_Final WHERE id_persona = $id");
     $registroEncontrado = $sql->fetch_object();
 
     // Verificar si se encontró el registro
